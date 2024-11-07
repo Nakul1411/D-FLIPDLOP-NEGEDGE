@@ -44,18 +44,27 @@ Step-7 Check for Race Conditions: Ensure that there are no race conditions or un
 
 **PROGRAM**
 
+
 Program for flipflops and verify its truth table in quartus using Verilog programming. 
 Developed by:  NAKUL R
 RegisterNumber: 212223240102
 
 module EX08DFF(D,Clock,reset,Q);
+
 input D,reset,Clock;
+
 output reg Q;
+
 always @ (negedge Clock)
+
 if(!reset)
+
 Q <= 0;
+
 else
+
 Q <= D;
+
 endmodule
 
 
